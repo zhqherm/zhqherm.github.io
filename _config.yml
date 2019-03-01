@@ -1,87 +1,31 @@
-title:            Herm's Blog
-description:      
-disqus_shortname: 
-reading_time:     true
-words_per_minute: 200
+title: Yuki Wu
+description: My Personal Blog
+author: Yuki Wu
+logo: /static/img/avatar.jpg
+github: https://github.com/wuyuki
+about: Share ideas, share tips, share life.
+keyword: "yuki, wuyuki, yukiwu, blog, data analysis, data visualization" 
 
-url:
+baseurl: ""
+url: "https://wuyuki.github.io/"
 
-# Owner/author information
-owner:
-  name:           Herm
-  avatar:         avatar.jpg
-  bio:            
-  email:          zhq204@qq.com
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin: 
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
+allowsearch: true
 
-# Background image to be tiled on all pages
-background: 
+# disqus_shortname: aboutyuki
+# google_analytics: UA-72862926-1
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+# share:
+#   twitter_username: \#
+#   fb_appid: 000000000000
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
-future:      false  # publish future dated posts --  true, false (default) 
-highlighter: rouge
-markdown:    kramdown
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-feed
-sass:
-  sass_dir: _sass
-  style: compressed
+# SNS settings
+github_username: wuyuki
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+enableTags: true
+tagarray: []
 
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-include: 
-  - .htaccess
-exclude: 
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
-  - node_modules
-  - package.json
-  - spec
-  - tmp
+paginate: 10
+per_page: 10
+paginate_path: "/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]
