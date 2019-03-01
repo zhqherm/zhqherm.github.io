@@ -2,8 +2,8 @@
 permalink:           pretty
 
 # Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
+title:               Herm's Blog
+tagline:             
 url:                 https://zhqherm.github.io/
 baseurl:             /progress-for-jekyll
 analytics_id:
@@ -11,8 +11,7 @@ analytics_id:
 # Owner/author information
 owner:
   name:           Herm
-  avatar:         avatar.png
-  bio:            "Designer."
+  avatar:         avatar.jpg
   email:          zhq204@qq.com
   twitter:        alexanderussell
   github:         zhqherm
