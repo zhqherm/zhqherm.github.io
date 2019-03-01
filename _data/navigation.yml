@@ -1,4 +1,14 @@
-# Menu navigation links
+# external: true to link offsite
 
-- title: GitHub
-  url: https://github.com/zhqherm
+- title: Home
+  href: "/"
+- title: About
+  href: "/about"
+- title: Archive
+  href: "/archive"
+- title: Donate
+  href: "https://flattr.com/profile/alexanderussell"
+  external: true
+- title: Alex Who?
+  href: "http://alexanderussell.org"
+  external: true
