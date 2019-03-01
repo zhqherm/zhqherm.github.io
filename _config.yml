@@ -1,17 +1,17 @@
-title: Yuki Wu
-description: My Personal Blog
-author: Yuki Wu
+title: Herm's Blog
+description: 
+author: Herm
 logo: /static/img/avatar.jpg
-github: https://github.com/wuyuki
-about: Share ideas, share tips, share life.
-keyword: "yuki, wuyuki, yukiwu, blog, data analysis, data visualization" 
+github: https://github.com/zhqherm
+about: Share ideas.
+keyword: "herm, blog, software engineer" 
 
 baseurl: ""
-url: "https://wuyuki.github.io/"
+url: "https://zhqherm.github.io/"
 
 allowsearch: true
 
-# disqus_shortname: aboutyuki
+# disqus_shortname: aboutherm
 # google_analytics: UA-72862926-1
 
 # share:
@@ -19,7 +19,7 @@ allowsearch: true
 #   fb_appid: 000000000000
 
 # SNS settings
-github_username: wuyuki
+github_username: Herm
 
 enableTags: true
 tagarray: []
