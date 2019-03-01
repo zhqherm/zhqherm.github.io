@@ -1,35 +1,87 @@
-# Permalinks
-permalink:           pretty
+title:            Herm's Blog
+description:      
+disqus_shortname: 
+reading_time:     true
+words_per_minute: 200
 
-# Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 http://alexanderussell.github.io
-baseurl:             /progress-for-jekyll
-analytics_id:
+url:
 
 # Owner/author information
 owner:
-  name:           Alex Russell
-  avatar:         avatar.png
-  bio:            "Designer."
-  email:          alex@collectivelymade.com
-  twitter:        alexanderussell
-  github:         alexanderussell
-  instagram:      alexanderussell
-  dribbble:       alexanderussell
-  location:       "Lincoln, NE"
+  name:           Herm
+  avatar:         avatar.jpg
+  bio:            
+  email:          zhq204@qq.com
+  twitter:        
+  facebook:       
+  github:         
+  stackexchange:  
+  linkedin: 
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
 
+# Background image to be tiled on all pages
+background: 
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
-
-# Gems
-gems:
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      false  # publish future dated posts --  true, false (default) 
+highlighter: rouge
+markdown:    kramdown
+plugins:
+  - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: 
+  - .htaccess
+exclude: 
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
