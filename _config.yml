@@ -1,31 +1,53 @@
+# Site settings
 title: Herm's Blog
-description: 
+url: "http://zhqherm.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+timezone: Asia/Chongqing
+description: >
+  Share Ideas.
+
+# Your information
+email: zhq204@qq.com
 author: Herm
-logo: /static/img/avatar.jpg
-github: https://github.com/zhqherm
-about: Share ideas.
-keyword: "herm, blog, software engineer" 
+avatar: /img/avatar.jpg
+profile: One sentence introducing yourself.
+#twitter_username: twitter_username
+#github_username:  github_username
+profile_links:
+  Email: "zhq204@qq.com"
+  GitHub: "https://github.com/zhqherm"
+  # You can add more profile links above, or edit _includes/sidebar.html 
 
-baseurl: ""
-url: "https://zhqherm.github.io/"
+excerpt_separator: <!--more-->
 
-allowsearch: true
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    About: /about/
+    Category: /category/
 
-# disqus_shortname: aboutherm
-# google_analytics: UA-72862926-1
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
 
-# share:
-#   twitter_username: \#
-#   fb_appid: 000000000000
+# Build settings
+paginate: 5
+paginate_path: "page:num"
 
-# SNS settings
-github_username: Herm
-
-enableTags: true
-tagarray: []
-
-paginate: 10
-per_page: 10
-paginate_path: "/page:num/"
+highlighter: rouge
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax

@@ -1,12 +1,8 @@
-<footer>
-  Copyright © 2019 Herm <a href="https://zhqherm.github.io/">Herm's Blog</a> - Powered by Jekyll.
-</footer>
-<div align="center">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-0000000000000000"
-    data-ad-slot="0000000000"
-    data-ad-format="auto"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<footer class="footer">
+<div class="wrapper">
+&copy; {{ site.time | date: '%Y' }} {{ site.author }}
 </div>
+</footer>
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});</script>
+<script src="{{ "/js/easybook.js" | prepend: site.baseurl }}"></script>
