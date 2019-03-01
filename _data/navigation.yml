@@ -6,6 +6,9 @@
   href: "/about"
 - title: Archive
   href: "/archive"
-- title: GitHub
-  href: "https://github.com/zhqherm"
+- title: Donate
+  href: "https://flattr.com/profile/alexanderussell"
+  external: true
+- title: Alex Who?
+  href: "http://alexanderussell.org"
   external: true
