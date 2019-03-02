@@ -6,10 +6,12 @@
 
 ## 安装步骤
 
-1. dmesg | grep firmware（非必要步骤）
+### 1. dmesg \| grep firmware（非必要步骤）
+
     - 查看是否有来自无线网卡的固件请求
 
-2. iw dev（非必要步骤）
+### 2. iw dev（非必要步骤）
+
     - 查看无线网口，interface后面即为无线网口号
 
         ``` shell
@@ -28,10 +30,12 @@
         channel 11 (2462 MHz), width: 40 MHz, center1: 2452 MHz
         ```
 
-3. ip link set wlp3s0 up（必要）
+### 3. ip link set wlp3s0 up（必要）
+
     - 激活无线网络接口
 
-4. ip link show wlp3s0（非必要步骤）
+### 4. ip link show wlp3s0（非必要步骤）
+
     - 检验接口是否激活成功
 
         ``` shell
@@ -41,20 +45,25 @@
 
     - <BROADCAST,MULTICAST,UP,LOWER_UP> 中的UP 表明该接口激活成功，后面的 state DOWN 无关紧要。
 
-5. iw wlp3s0 link（非必要步骤）
+### 5. iw wlp3s0 link（非必要步骤）
+
     - 查看无线网络连接情况
 
-6. iw wlp3s0 scan \| grep SSID（如果知道 Wifi 名字，就不需要）
+### 6. iw wlp3s0 scan \| grep SSID（如果知道 Wifi 名字，就不需要）
+
     - 扫描可连接的wifi
 
-7. wpa_supplicant -B -i wlp3s0 -c < (wpa_passphrase "ssid" "psk")（必要）
+### 7. wpa_supplicant -B -i wlp3s0 -c < (wpa_passphrase "ssid" "psk")（必要）
+
     - 连接指定的SSID，将ssid 替换为实际的网络名称，psk 替换为无线密码，请保留引号。
     - Successfully initialized wpa_supplicant //  连接成功标志
 
-8. dhclient wlp3s0（必要）
+### 8. dhclient wlp3s0（必要）
+
     - 用dhcp 获得 IP 分配
 
-9. ip addr show wlp3s0（必要）
+### 9. ip addr show wlp3s0（必要）
+
     - 查看是否成功地通过dhcp自动获取了ip地址，如果分配有ip，即可上网，也可以有ping直接测试
 
         ``` shell
@@ -66,4 +75,4 @@
         valid_lft forever preferred_lft forever
         ```
 
-10. yum install net-tools
+### 10. yum install net-tools

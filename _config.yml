@@ -1,7 +1,7 @@
 # Site settings
 title: Herm's Blog
-url: "http://zhqherm.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+url: "http://zhqherm.github.io"
+baseurl: ""
 timezone: Asia/Chongqing
 description: >
   Share Ideas.
@@ -10,7 +10,7 @@ description: >
 email: zhq204@qq.com
 author: Herm
 avatar: /img/avatar.jpg
-profile: One sentence introducing yourself.
+profile: Share Ideas.
 #twitter_username: twitter_username
 #github_username:  github_username
 profile_links:

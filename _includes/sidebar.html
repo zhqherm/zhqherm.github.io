@@ -10,7 +10,7 @@
     <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
     {% endif %}
     {% for link in site.profile_links %}
-    <a href="{{ link | last }}">{{ link | first }}</a>
+    <a href="{{ link | last }}" target="_blank">{{ link | first }}</a>
     {% endfor %}
   </p>
 </div>
